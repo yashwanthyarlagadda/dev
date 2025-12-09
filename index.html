@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yashwanth Yarlagadda</title>
+  <title>Yashwanth Yarlagadda | Software Engineer</title>
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Scripts -->
   <script src="script.js" defer></script>
+
+  <meta name="description"
+        content="Portfolio of Yashwanth Yarlagadda, Software Development Engineer in Seattle. Backend, experimentation platforms, AWS, Java, TypeScript." />
 </head>
 
 <body>
   <div class="page">
-    <!-- Navigation -->
+
+    <!-- Top Navigation -->
     <header class="site-nav">
       <div class="site-nav__inner">
-        <div class="brand-mark">YY</div>
+        <a href="#top" class="brand">
+          <div class="brand__mark">YY</div>
+          <div class="brand__text">
+            <span class="brand__name">Yashwanth Yarlagadda</span>
+            <span class="brand__role">Software Development Engineer</span>
+          </div>
+        </a>
 
         <nav class="site-nav__links">
           <a href="#about" class="site-nav__link">About</a>
@@ -28,177 +35,399 @@
           <a href="#publications" class="site-nav__link">Publications</a>
           <a href="#contact" class="site-nav__link">Contact</a>
         </nav>
+
+        <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+          🌙
+        </button>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <div class="hero__eyebrow">Software Development Engineer · Seattle, WA</div>
+    <!-- Hero / About -->
+    <main id="top">
+      <section class="hero" id="about">
+        <div class="hero__eyebrow">
+          <span>Software Development Engineer · Seattle, WA</span>
+        </div>
 
-      <h1 class="hero__title">Hi, I’m Yashwanth Yarlagadda.</h1>
+        <h1 class="hero__title">Hi, I’m Yashwanth.</h1>
 
-      <p class="hero__subtitle">
-        I build reliable, scalable backend systems and experimentation services.
-        Currently at Amazon, working across Java, TypeScript, AWS, and large-scale data workflows.
-      </p>
+        <p class="hero__subtitle">
+          I build reliable, data-driven backend services and experimentation platforms.
+          I currently work at Amazon, using <strong>Java</strong>, <strong>TypeScript</strong>, and
+          <strong>AWS</strong> to ship scalable catalog and robotics solutions with strong
+          observability and operational excellence.
+        </p>
 
-      <div class="hero__meta">
-        <span>Seattle, Washington</span>
-        <span>·</span>
-        <span>kethan403@gmail.com</span>
-        <span>·</span>
-        <span>+1 (469) 996-4010</span>
-      </div>
+        <div class="hero__meta">
+          <span>📍 Seattle, Washington</span>
+          <span>·</span>
+          <span>✉️ <a href="mailto:kethan403@gmail.com">kethan403@gmail.com</a></span>
+          <span>·</span>
+          <span>📱 <a href="tel:+14699964010">+1 (469) 996-4010</a></span>
+        </div>
 
-      <div class="hero__actions">
-        <a href="#experience" class="btn btn--primary">View Experience</a>
-        <a href="#contact" class="btn btn--ghost">Contact</a>
-      </div>
-    </section>
+        <div class="hero__actions">
+          <a href="#experience" class="btn btn--primary">
+            <span>View experience</span>
+            <span class="btn__icon">↗</span>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <span>Contact</span>
+          </a>
+        </div>
 
-    <!-- Experience -->
-    <section id="experience" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Experience</h2>
-        <span class="section__pill">5+ years building scalable systems</span>
-      </div>
+        <div class="hero__social">
+          <a href="https://www.linkedin.com/in/yyashwanth" target="_blank" rel="noreferrer">
+            <span class="social-chip">
+              <span>🔗</span> LinkedIn
+            </span>
+          </a>
+          <a href="https://github.com/yashwanthyarlagadda" target="_blank" rel="noreferrer">
+            <span class="social-chip">
+              <span>🐙</span> GitHub
+            </span>
+          </a>
+        </div>
+      </section>
 
-      <!-- Amazon -->
-      <article class="card">
-        <div class="card__header">
+      <!-- Experience -->
+      <section id="experience" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Experience</h2>
+          <span class="section__pill">5+ years building scalable systems</span>
+        </div>
+        <p class="section__subtitle">
+          Roles where I’ve designed, shipped, and operated backend systems in production.
+        </p>
+
+        <!-- Amazon -->
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">Software Development Engineer</div>
+              <div class="card__meta">
+                Amazon · Seattle, USA · Aug 2022 – Present
+              </div>
+            </div>
+            <div class="card__meta card__meta--sub">
+              <span>Amazon Scout · Teleops & Delivery Experience</span>
+            </div>
+          </div>
+
+          <div class="card__chip-row">
+            <span class="chip">Java</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Distributed Systems</span>
+            <span class="chip">Experimentation</span>
+          </div>
+
+          <ul class="card__list">
+            <li>
+              Built and operated backend services for delivery-robot teleoperations in
+              <strong>Java</strong> and <strong>TypeScript</strong>, improving real-time
+              visibility and control for operations teams.
+            </li>
+            <li>
+              Designed and shipped catalog experimentation platform features so teams can
+              roll out catalog changes through controlled experiments instead of one-off launches.
+            </li>
+            <li>
+              Expanded experiment coverage across more catalog attributes and automated
+              experiment lifecycle with <strong>Weblab APIs</strong>, reducing manual setup
+              and operational overhead for partner teams.
+            </li>
+            <li>
+              Built an A/B testing reporting pipeline with
+              <strong>Amazon Managed Workflows for Apache Airflow</strong>, <strong>EMR</strong>,
+              <strong>SQS</strong>, <strong>SNS</strong>, and <strong>S3</strong> to compute
+              metrics like OPS, units, and glance views for experiments.
+            </li>
+            <li>
+              Integrated experimentation and reporting workflows with
+              <strong>AWS Lambda</strong>, <strong>API Gateway</strong>,
+              <strong>DynamoDB</strong>, <strong>RDS</strong>, and
+              <strong>CloudWatch</strong> to improve reliability, observability, and on-call health.
+            </li>
+            <li>
+              Hardened the platform using <strong>AWS AppConfig</strong>,
+              <strong>CloudFormation</strong>, <strong>ECS Fargate</strong>, and
+              <strong>IAM</strong>, improving deployment safety, configuration hygiene, and scalability.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Graduate Assistant -->
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">Graduate Assistant · IT Tech Support Associate</div>
+              <div class="card__meta">
+                Northern Illinois University · DeKalb, USA · Aug 2021 – Jul 2022
+              </div>
+            </div>
+          </div>
+
+          <div class="card__chip-row">
+            <span class="chip">IT Support</span>
+            <span class="chip">Classroom Tech</span>
+            <span class="chip">Hardware & Software</span>
+          </div>
+
+          <ul class="card__list">
+            <li>
+              Supported classroom technology for 500+ students, ensuring lecture hardware,
+              AV systems, and learning tools worked reliably during instruction.
+            </li>
+            <li>
+              Tested and evaluated campus technologies, identified hardware/software issues,
+              and delivered timely troubleshooting to faculty and staff.
+            </li>
+            <li>
+              Imaged and prepared computers and laptops while maintaining accurate asset
+              and support records for future audits and refreshes.
+            </li>
+            <li>
+              Educated students and staff on available NIU technologies and helped them use
+              the right tools for their coursework and research.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Education</h2>
+        </div>
+
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">Master’s in Computer Science</div>
+              <div class="card__meta">
+                Northern Illinois University · Jan 2021 – Aug 2022
+              </div>
+            </div>
+          </div>
+          <p class="card__note">CGPA: 3.39 / 4.00</p>
+          <ul class="card__list">
+            <li>
+              Focused on distributed systems, algorithms, and large-scale data processing.
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">Bachelor’s in Computer Science and Engineering</div>
+              <div class="card__meta">
+                Institute of Aeronautical Engineering · Aug 2016 – May 2020
+              </div>
+            </div>
+          </div>
+          <p class="card__note">CGPA: 6.62 / 10.00</p>
+        </article>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Skills</h2>
+          <span class="section__subtitle">
+            A snapshot of the technologies I work with most.
+          </span>
+        </div>
+
+        <div class="skills-layout">
           <div>
-            <div class="card__title">Software Development Engineer</div>
-            <div class="card__meta">Amazon · Seattle, WA · Aug 2022 – Present</div>
+            <h3>Programming Languages</h3>
+            <div class="skill-grid">
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">R</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Databases</h3>
+            <div class="skill-grid">
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">DynamoDB</span>
+              <span class="skill-pill">Amazon RDS</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Cloud & Infrastructure (AWS)</h3>
+            <div class="skill-grid">
+              <span class="skill-pill">Lambda</span>
+              <span class="skill-pill">Step Functions</span>
+              <span class="skill-pill">API Gateway</span>
+              <span class="skill-pill">IAM</span>
+              <span class="skill-pill">DynamoDB</span>
+              <span class="skill-pill">RDS</span>
+              <span class="skill-pill">S3</span>
+              <span class="skill-pill">SNS</span>
+              <span class="skill-pill">SQS</span>
+              <span class="skill-pill">AppConfig</span>
+              <span class="skill-pill">CloudFormation</span>
+              <span class="skill-pill">CloudWatch</span>
+              <span class="skill-pill">CDK</span>
+              <span class="skill-pill">ECS Fargate</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Tools & Frameworks</h3>
+            <div class="skill-grid">
+              <span class="skill-pill">IntelliJ</span>
+              <span class="skill-pill">Visual Studio</span>
+              <span class="skill-pill">Eclipse</span>
+              <span class="skill-pill">Jupyter Notebook</span>
+              <span class="skill-pill">Android Studio</span>
+              <span class="skill-pill">Apache Airflow</span>
+              <span class="skill-pill">EMR</span>
+              <span class="skill-pill">SQS</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="card__chip-row">
-          <span class="chip">Java</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">AWS</span>
-          <span class="chip">Distributed Systems</span>
+      <!-- Projects -->
+      <section id="projects" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Projects</h2>
+        </div>
+        <p class="section__subtitle">Selected academic and personal projects.</p>
+
+        <!-- Web Scraping & Sentiment Analysis -->
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">Web Scraping &amp; Sentiment Analysis</div>
+              <div class="card__meta">Python · R · May 2022 – Jul 2022</div>
+            </div>
+          </div>
+
+          <ul class="card__list">
+            <li>
+              Built scrapers to collect datasets from multiple websites, then cleaned and
+              merged data for downstream analysis.
+            </li>
+            <li>
+              Applied sentiment analysis to evaluate company performance signals and
+              trends from unstructured text.
+            </li>
+          </ul>
+        </article>
+
+        <!-- 2048 Game -->
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">2048 Game with AI Heuristics</div>
+              <div class="card__meta">Java · OOP · Aug 2019 – Dec 2019</div>
+            </div>
+          </div>
+
+          <ul class="card__list">
+            <li>
+              Implemented an AI-driven version of 2048 using improved heuristic functions
+              and search trees.
+            </li>
+            <li>
+              Achieved smoother and stronger playing strategies compared with baseline
+              implementations.
+            </li>
+          </ul>
+        </article>
+
+        <!-- RFID Project -->
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">RFID-based Real-Time Location in Medical Settings</div>
+              <div class="card__meta">IoT · Jan 2019 – Mar 2019</div>
+            </div>
+          </div>
+
+          <ul class="card__list">
+            <li>
+              Developed an integrated system using RFID tags and DHT sensors to provide
+              real-time location of tagged cards.
+            </li>
+            <li>
+              Enabled better asset tracking and monitoring workflows in medical environments.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Publications</h2>
         </div>
 
-        <ul>
-          <li>Designed and delivered backend services powering catalog and robotics integrations.</li>
-          <li>Optimized experimentation and deployments across multi-team infrastructure.</li>
-          <li>Implemented end-to-end monitoring, alerting, and operational excellence tooling.</li>
-        </ul>
-      </article>
-    </section>
+        <article class="card">
+          <div class="card__header">
+            <div>
+              <div class="card__title">
+                An Efficient Approach to Implement 2048 Game Using Artificial Intelligence
+              </div>
+              <div class="card__meta">Sep 2020</div>
+            </div>
+          </div>
 
-    <!-- Education -->
-    <section id="education" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Education</h2>
-      </div>
+          <p class="card__body">
+            Co-authored with Tejaswini Mandava, Varsha Kakumanu, and P. L. Srinivasa Murthy.
+            Proposed an enhanced 2048 implementation by improving heuristic functions and applying
+            search trees for more intelligent and responsive gameplay.
+          </p>
+        </article>
+      </section>
 
-      <article class="card">
-        <div class="card__header">
-          <div>
-            <div class="card__title">Master’s in Computer Science</div>
-            <div class="card__meta">University of North Texas · Denton, TX</div>
+      <!-- Contact -->
+      <section id="contact" class="section reveal">
+        <div class="section__header">
+          <h2 class="section__title">Contact</h2>
+          <span class="section__subtitle">
+            Open to roles and conversations around backend, data, and experimentation platforms.
+          </span>
+        </div>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="contact-item__label">Email</span>
+            <a href="mailto:kethan403@gmail.com">kethan403@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Phone</span>
+            <a href="tel:+14699964010">+1 (469) 996-4010</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/yyashwanth" target="_blank" rel="noreferrer">
+              linkedin.com/in/yyashwanth
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">GitHub</span>
+            <a href="https://github.com/yashwanthyarlagadda" target="_blank" rel="noreferrer">
+              github.com/yashwanthyarlagadda
+            </a>
           </div>
         </div>
-
-        <ul>
-          <li>Focused on distributed systems, algorithms, and large-scale computation.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">Technologies I work with</span>
-      </div>
-
-      <h3>Programming Languages</h3>
-      <div class="skill-grid">
-        <span class="skill-pill">Java</span>
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">TypeScript</span>
-        <span class="skill-pill">C</span>
-      </div>
-
-      <h3>Cloud & Infrastructure</h3>
-      <div class="skill-grid">
-        <span class="skill-pill">AWS</span>
-        <span class="skill-pill">Lambda</span>
-        <span class="skill-pill">S3</span>
-        <span class="skill-pill">API Gateway</span>
-        <span class="skill-pill">EC2</span>
-      </div>
-
-      <h3>Frameworks / Tools</h3>
-      <div class="skill-grid">
-        <span class="skill-pill">Spring</span>
-        <span class="skill-pill">React</span>
-        <span class="skill-pill">Node.js</span>
-        <span class="skill-pill">SQL</span>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Projects</h2>
-      </div>
-
-      <article class="card">
-        <div class="card__header">
-          <div>
-            <div class="card__title">Personal Website</div>
-            <div class="card__meta">Frontend · HTML, CSS, JS</div>
-          </div>
-        </div>
-
-        <ul>
-          <li>Designed a clean developer portfolio with scroll interactions.</li>
-          <li>Optimized UI for readability, contrast, and motion.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Publications</h2>
-      </div>
-
-      <article class="card">
-        <div class="card__header">
-          <div>
-            <div class="card__title">Placeholder Publication</div>
-            <div class="card__meta">Coming soon</div>
-          </div>
-        </div>
-
-        <ul>
-          <li>Future research work around systems or machine learning.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section reveal">
-      <div class="section__header">
-        <h2 class="section__title">Contact</h2>
-        <span class="section__subtitle">Let’s connect</span>
-      </div>
-
-      <div class="contact-list">
-        <div class="contact-item">Email: kethan403@gmail.com</div>
-        <div class="contact-item">Phone: +1 (469) 996-4010</div>
-        <div class="contact-item">Location: Seattle, WA</div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="site-footer">
-      © 2025 Yashwanth Yarlagadda. All rights reserved.
+      <a href="#top" class="back-to-top">↑ Back to top</a>
+      <span>© <span id="year"></span> Yashwanth Yarlagadda. All rights reserved.</span>
     </footer>
-
   </div>
 </body>
 </html>
