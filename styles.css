@@ -101,11 +101,6 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
-.brand__role {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-}
-
 /* Nav links */
 
 .site-nav__links {
@@ -383,7 +378,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
+}
+
+.card__header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 .card__title {
@@ -396,8 +397,20 @@ a:hover {
   color: var(--text-muted);
 }
 
-.card__meta--sub {
-  text-align: right;
+.card__meta--org {
+  color: var(--text-muted);
+}
+
+.card__meta--time {
+  white-space: nowrap;
+  font-size: 0.84rem;
+  color: var(--text-soft);
+}
+
+.card__summary {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.2rem 0 0.5rem;
 }
 
 .card__chip-row {
@@ -426,16 +439,80 @@ a:hover {
   margin-bottom: 0.25rem;
 }
 
-.card__note {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin: 0.25rem 0 0.45rem;
-}
-
 .card__body {
   font-size: 0.92rem;
   line-height: 1.6;
   margin: 0.35rem 0 0;
+}
+
+/* ===========================
+   Experience – teams inside Amazon card
+   =========================== */
+
+.exp-team {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(209, 213, 219, 0.9);
+}
+
+.exp-team:first-of-type {
+  margin-top: 0.4rem;
+}
+
+.exp-team__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.exp-team__header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+}
+
+.exp-team__name {
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+
+.exp-team__meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.exp-team__right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.exp-team__badge {
+  font-size: 0.78rem;
+  padding: 0.16rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background-color: #f1f5f9;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.exp-team__badge--current {
+  background-color: #dcfce7;
+  border-color: #4ade80;
+  color: #166534;
+}
+
+.exp-team__list {
+  margin: 0.2rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.exp-team__list li {
+  margin-bottom: 0.2rem;
 }
 
 /* ===========================
@@ -507,6 +584,20 @@ a:hover {
 .edu-card__meta {
   font-size: 0.86rem;
   color: var(--text-muted);
+}
+
+.edu-card__right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.edu-card__time {
+  font-size: 0.84rem;
+  color: var(--text-soft);
+  white-space: nowrap;
 }
 
 .edu-card__badge {
@@ -671,5 +762,14 @@ a:hover {
 
   .edu-card__rail {
     width: 22px;
+  }
+
+  .card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card__meta--time {
+    margin-top: 0.15rem;
   }
 }
