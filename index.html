@@ -26,11 +26,7 @@
   <div class="page">
     <!-- Top Navigation -->
     <header class="site-nav">
-      <div class="site-nav__inner">
-        <a href="#top" class="brand">
-          <span class="brand__name">Yashwanth Yarlagadda</span>
-        </a>
-
+      <div class="site-nav__inner site-nav__inner--no-brand">
         <nav class="site-nav__links">
           <a href="#about" class="site-nav__link">About</a>
           <a href="#experience" class="site-nav__link">Experience</a>
@@ -398,48 +394,33 @@
         <div class="section__header">
           <h2 class="section__title">Skills</h2>
           <span class="section__subtitle">
-            Technologies and tools I use to design, build, and operate services.
+            The stack I use most often to design, build, and operate services.
           </span>
         </div>
 
-        <div class="skills-layout">
-          <article class="skill-block">
-            <div class="skill-block__header">
-              <h3>Programming Languages</h3>
-              <p class="skill-block__hint">
-                Daily driver languages for backend, scripting, and analysis.
-              </p>
-            </div>
-            <div class="skill-grid">
+        <div class="skills-table">
+          <div class="skills-row">
+            <div class="skills-row__label">Programming Languages</div>
+            <div class="skills-row__tags">
               <span class="skill-pill">Java</span>
               <span class="skill-pill">Python</span>
               <span class="skill-pill">TypeScript</span>
               <span class="skill-pill">R</span>
             </div>
-          </article>
+          </div>
 
-          <article class="skill-block">
-            <div class="skill-block__header">
-              <h3>Databases</h3>
-              <p class="skill-block__hint">
-                Relational and NoSQL stores used across different services.
-              </p>
-            </div>
-            <div class="skill-grid">
+          <div class="skills-row">
+            <div class="skills-row__label">Databases</div>
+            <div class="skills-row__tags">
               <span class="skill-pill">SQL</span>
               <span class="skill-pill">DynamoDB</span>
               <span class="skill-pill">Amazon RDS</span>
             </div>
-          </article>
+          </div>
 
-          <article class="skill-block">
-            <div class="skill-block__header">
-              <h3>Cloud &amp; Infrastructure (AWS)</h3>
-              <p class="skill-block__hint">
-                Services I rely on for compute, orchestration, and observability.
-              </p>
-            </div>
-            <div class="skill-grid">
+          <div class="skills-row">
+            <div class="skills-row__label">AWS &amp; Infra</div>
+            <div class="skills-row__tags">
               <span class="skill-pill">Lambda</span>
               <span class="skill-pill">Step Functions</span>
               <span class="skill-pill">API Gateway</span>
@@ -455,16 +436,11 @@
               <span class="skill-pill">CDK</span>
               <span class="skill-pill">ECS Fargate</span>
             </div>
-          </article>
+          </div>
 
-          <article class="skill-block">
-            <div class="skill-block__header">
-              <h3>Tools &amp; Frameworks</h3>
-              <p class="skill-block__hint">
-                Editors, IDEs, and data processing tools I use regularly.
-              </p>
-            </div>
-            <div class="skill-grid">
+          <div class="skills-row">
+            <div class="skills-row__label">Tools &amp; Frameworks</div>
+            <div class="skills-row__tags">
               <span class="skill-pill">IntelliJ</span>
               <span class="skill-pill">Visual Studio</span>
               <span class="skill-pill">Eclipse</span>
@@ -474,7 +450,7 @@
               <span class="skill-pill">EMR</span>
               <span class="skill-pill">SQS</span>
             </div>
-          </article>
+          </div>
         </div>
       </section>
 
