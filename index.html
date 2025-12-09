@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yashwanth Yarlagadda | Software Engineer</title>
 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 
@@ -20,11 +28,8 @@
     <header class="site-nav">
       <div class="site-nav__inner">
         <a href="#top" class="brand">
-          <div class="brand__mark">YY</div>
-          <div class="brand__text">
-            <span class="brand__name">Yashwanth Yarlagadda</span>
-            <span class="brand__role">Software Development Engineer</span>
-          </div>
+          <span class="brand__name">Yashwanth Yarlagadda</span>
+          <span class="brand__role">Software Development Engineer</span>
         </a>
 
         <nav class="site-nav__links">
@@ -210,34 +215,46 @@
           <h2 class="section__title">Education</h2>
         </div>
 
-        <article class="card">
-          <div class="card__header">
-            <div>
-              <div class="card__title">Master’s in Computer Science</div>
-              <div class="card__meta">
-                Northern Illinois University · Jan 2021 – Aug 2022
-              </div>
+        <div class="edu-timeline">
+          <article class="edu-card">
+            <div class="edu-card__rail">
+              <span class="edu-card__dot"></span>
             </div>
-          </div>
-          <p class="card__note">CGPA: 3.39 / 4.00</p>
-          <ul class="card__list">
-            <li>
-              Focused on distributed systems, algorithms, and large-scale data processing.
-            </li>
-          </ul>
-        </article>
+            <div class="edu-card__body">
+              <div class="edu-card__top">
+                <div>
+                  <div class="edu-card__title">Master’s in Computer Science</div>
+                  <div class="edu-card__meta">
+                    Northern Illinois University · Jan 2021 – Aug 2022
+                  </div>
+                </div>
+                <span class="edu-card__badge">CGPA · 3.39 / 4.00</span>
+              </div>
+              <p class="edu-card__desc">
+                Focused on distributed systems, algorithms, and large-scale data processing.
+              </p>
+            </div>
+          </article>
 
-        <article class="card">
-          <div class="card__header">
-            <div>
-              <div class="card__title">Bachelor’s in Computer Science and Engineering</div>
-              <div class="card__meta">
-                Institute of Aeronautical Engineering · Aug 2016 – May 2020
+          <article class="edu-card">
+            <div class="edu-card__rail">
+              <span class="edu-card__dot"></span>
+            </div>
+            <div class="edu-card__body">
+              <div class="edu-card__top">
+                <div>
+                  <div class="edu-card__title">
+                    Bachelor’s in Computer Science and Engineering
+                  </div>
+                  <div class="edu-card__meta">
+                    Institute of Aeronautical Engineering · Aug 2016 – May 2020
+                  </div>
+                </div>
+                <span class="edu-card__badge">CGPA · 6.62 / 10.00</span>
               </div>
             </div>
-          </div>
-          <p class="card__note">CGPA: 6.62 / 10.00</p>
-        </article>
+          </article>
+        </div>
       </section>
 
       <!-- Skills -->
@@ -250,27 +267,36 @@
         </div>
 
         <div class="skills-layout">
-          <div>
-            <h3>Programming Languages</h3>
+          <article class="skill-block">
+            <div class="skill-block__header">
+              <h3>Programming Languages</h3>
+              <p class="skill-block__hint">Daily driver and core problem-solving stack.</p>
+            </div>
             <div class="skill-grid">
               <span class="skill-pill">Java</span>
               <span class="skill-pill">Python</span>
               <span class="skill-pill">TypeScript</span>
               <span class="skill-pill">R</span>
             </div>
-          </div>
+          </article>
 
-          <div>
-            <h3>Databases</h3>
+          <article class="skill-block">
+            <div class="skill-block__header">
+              <h3>Databases</h3>
+              <p class="skill-block__hint">Relational + NoSQL, tuned for reliability.</p>
+            </div>
             <div class="skill-grid">
               <span class="skill-pill">SQL</span>
               <span class="skill-pill">DynamoDB</span>
               <span class="skill-pill">Amazon RDS</span>
             </div>
-          </div>
+          </article>
 
-          <div>
-            <h3>Cloud &amp; Infrastructure (AWS)</h3>
+          <article class="skill-block">
+            <div class="skill-block__header">
+              <h3>Cloud &amp; Infrastructure (AWS)</h3>
+              <p class="skill-block__hint">Services I use to ship and operate systems.</p>
+            </div>
             <div class="skill-grid">
               <span class="skill-pill">Lambda</span>
               <span class="skill-pill">Step Functions</span>
@@ -287,10 +313,13 @@
               <span class="skill-pill">CDK</span>
               <span class="skill-pill">ECS Fargate</span>
             </div>
-          </div>
+          </article>
 
-          <div>
-            <h3>Tools &amp; Frameworks</h3>
+          <article class="skill-block">
+            <div class="skill-block__header">
+              <h3>Tools &amp; Frameworks</h3>
+              <p class="skill-block__hint">Editor, IDE, and processing stack.</p>
+            </div>
             <div class="skill-grid">
               <span class="skill-pill">IntelliJ</span>
               <span class="skill-pill">Visual Studio</span>
@@ -301,7 +330,7 @@
               <span class="skill-pill">EMR</span>
               <span class="skill-pill">SQS</span>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
