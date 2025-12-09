@@ -18,7 +18,7 @@
 
   <meta
     name="description"
-    content="Portfolio of Yashwanth Yarlagadda, Software Development Engineer in Seattle, focused on backend systems, experimentation platforms, and AWS."
+    content="Portfolio of Yashwanth Yarlagadda, Software Development Engineer in Seattle, focused on backend systems, experimentation platforms, and GenAI customer service experiences."
   />
 </head>
 
@@ -29,7 +29,6 @@
       <div class="site-nav__inner">
         <a href="#top" class="brand">
           <span class="brand__name">Yashwanth Yarlagadda</span>
-          <span class="brand__role">Software Development Engineer</span>
         </a>
 
         <nav class="site-nav__links">
@@ -55,11 +54,11 @@
           <h1 class="hero__title">Hi, I’m Yashwanth.</h1>
 
           <p class="hero__subtitle">
-            I design and build reliable, data-driven backend services and experimentation
-            platforms. I currently work at Amazon, using
+            I design and build reliable, data-driven backend services, experimentation
+            platforms, and GenAI workloads. I’ve worked across robotics teleoperations,
+            catalog experimentation, and model-driven customer service at Amazon, using
             <strong>Java</strong>, <strong>TypeScript</strong>, and <strong>AWS</strong>
-            to ship scalable catalog and robotics solutions with strong observability and
-            operational excellence.
+            to ship scalable systems with strong observability and operational excellence.
           </p>
 
           <div class="hero__meta">
@@ -111,76 +110,198 @@
       <section id="experience" class="section reveal">
         <div class="section__header">
           <h2 class="section__title">Experience</h2>
-          <span class="section__pill">5+ years of building real-world systems</span>
+          <span class="section__pill">5+ years of building production systems</span>
         </div>
         <p class="section__subtitle">
-          Roles where I’ve owned, shipped, and operated backend systems in production.
+          A closer look at the teams and systems I’ve built, owned, and operated.
         </p>
 
         <!-- Amazon -->
         <article class="card">
           <div class="card__header">
-            <div>
+            <div class="card__header-main">
               <div class="card__title">Software Development Engineer</div>
-              <div class="card__meta">Amazon · Seattle, USA · Aug 2022 – Present</div>
+              <div class="card__meta card__meta--org">Amazon · Seattle, USA</div>
             </div>
-            <div class="card__meta card__meta--sub">
-              Amazon Scout · Teleops &amp; Catalog Experimentation
-            </div>
+            <div class="card__meta card__meta--time">Aug 2022 – Present</div>
           </div>
+
+          <p class="card__summary">
+            At Amazon I’ve worked across three teams—delivery-robot teleoperations,
+            catalog experimentation, and customer service GenAI—owning backend services,
+            data pipelines, and experimentation workflows from design to on-call.
+          </p>
 
           <div class="card__chip-row">
             <span class="chip">Java</span>
             <span class="chip">TypeScript</span>
             <span class="chip">AWS</span>
+            <span class="chip">GenAI &amp; LLMs</span>
             <span class="chip">Distributed Systems</span>
             <span class="chip">Experimentation</span>
           </div>
 
-          <ul class="card__list">
-            <li>
-              Built and operated backend services for delivery-robot teleoperations in
-              <strong>Java</strong> and <strong>TypeScript</strong>, improving real-time
-              visibility and control for operations teams.
-            </li>
-            <li>
-              Implemented catalog experimentation features that let teams launch changes
-              through controlled experiments instead of one-off releases.
-            </li>
-            <li>
-              Expanded experimentation coverage to additional catalog attributes and
-              automated experiment lifecycle management using <strong>Weblab APIs</strong>.
-            </li>
-            <li>
-              Created an A/B testing reporting pipeline with
-              <strong>Apache Airflow</strong>, <strong>EMR</strong>, <strong>SQS</strong>,
-              <strong>SNS</strong>, and <strong>S3</strong> to compute metrics such as OPS,
-              units sold, and glance views.
-            </li>
-            <li>
-              Integrated experimentation and reporting workflows with
-              <strong>AWS Lambda</strong>, <strong>API Gateway</strong>,
-              <strong>DynamoDB</strong>, <strong>RDS</strong>, and
-              <strong>CloudWatch</strong> for reliability and observability.
-            </li>
-            <li>
-              Used <strong>AWS AppConfig</strong>, <strong>CloudFormation</strong>,
-              <strong>ECS Fargate</strong>, and <strong>IAM</strong> to make deployments
-              safer and the platform more scalable and secure.
-            </li>
-          </ul>
+          <!-- Team 3: Current GenAI team -->
+          <div class="exp-team">
+            <div class="exp-team__header">
+              <div class="exp-team__header-main">
+                <div class="exp-team__name">
+                  Customer Engagement Technology · Customer Service
+                </div>
+                <div class="exp-team__meta">
+                  GenAI model hosting &amp; inference for customer service chatbot
+                </div>
+              </div>
+              <div class="exp-team__right">
+                <span class="exp-team__badge exp-team__badge--current">Current team</span>
+              </div>
+            </div>
+
+            <ul class="exp-team__list">
+              <li>
+                Work on model hosting, inference, and pre/post-processing pipelines for
+                GenAI LLMs that power Amazon’s customer service chatbot, enabling fast,
+                consistent, 24/7 responses across large volumes of customer contacts.
+              </li>
+              <li>
+                Design and maintain backend workflows that orchestrate prompt construction,
+                safe routing of requests to LLM endpoints, and structured post-processing
+                so that model outputs can be safely consumed by downstream services and UI.
+              </li>
+              <li>
+                Collaborate with scientists and applied engineers to integrate new model
+                variants and prompts, making sure the serving layer can handle changes in
+                token usage, latency, and context window without breaking SLAs.
+              </li>
+              <li>
+                Add observability for every step of the GenAI pipeline—latency buckets,
+                error categories, fallback behavior, and guardrail signals—so incidents
+                can be detected and mitigated quickly during on-call.
+              </li>
+              <li>
+                Partner with customer service stakeholders to tune flows that reduce
+                agent dependency, by routing simple and repetitive questions to the
+                chatbot while escalating complex cases with enough context for agents
+                to respond efficiently.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Team 2: Catalog experimentation -->
+          <div class="exp-team">
+            <div class="exp-team__header">
+              <div class="exp-team__header-main">
+                <div class="exp-team__name">
+                  Catalog Experimentation Platform
+                </div>
+                <div class="exp-team__meta">
+                  A/B testing and reporting workflows for Amazon catalog
+                </div>
+              </div>
+              <div class="exp-team__right">
+                <span class="exp-team__badge">Team 2</span>
+              </div>
+            </div>
+
+            <ul class="exp-team__list">
+              <li>
+                Implemented catalog experimentation features that allowed partner teams
+                to roll out changes through controlled experiments instead of one-off
+                releases, reducing blast radius for risky changes.
+              </li>
+              <li>
+                Expanded experimentation coverage to additional catalog attributes by
+                wiring new treatment dimensions into <strong>Weblab</strong> and backend
+                services, enabling richer test design without custom code.
+              </li>
+              <li>
+                Built an A/B testing reporting pipeline using
+                <strong>Apache Airflow</strong>, <strong>EMR</strong>,
+                <strong>SQS</strong>, <strong>SNS</strong>, and <strong>S3</strong> to
+                compute OPS, units sold, glance views, and other experiment metrics in a
+                repeatable and auditable way.
+              </li>
+              <li>
+                Integrated experimentation and reporting workflows with
+                <strong>AWS Lambda</strong>, <strong>API Gateway</strong>,
+                <strong>DynamoDB</strong>, <strong>RDS</strong>, and
+                <strong>CloudWatch</strong>, giving stakeholders dashboards and alarms for
+                experiment health.
+              </li>
+              <li>
+                Used <strong>AWS AppConfig</strong>, <strong>CloudFormation</strong>,
+                <strong>CDK</strong>, <strong>ECS Fargate</strong>, and
+                <strong>IAM</strong> to make deployments safer and repeatable, with
+                infrastructure changes tracked alongside code.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Team 1: Scout teleoperations -->
+          <div class="exp-team">
+            <div class="exp-team__header">
+              <div class="exp-team__header-main">
+                <div class="exp-team__name">
+                  Amazon Scout · Teleoperations Platform
+                </div>
+                <div class="exp-team__meta">
+                  Backend services for delivery-robot operations
+                </div>
+              </div>
+              <div class="exp-team__right">
+                <span class="exp-team__badge">Team 1</span>
+              </div>
+            </div>
+
+            <ul class="exp-team__list">
+              <li>
+                Built and operated backend services for delivery-robot teleoperations
+                using <strong>Java</strong> and <strong>TypeScript</strong>, giving
+                operations teams real-time visibility into robot state and actions.
+              </li>
+              <li>
+                Designed and maintained APIs that supported the teleoperations console,
+                routing commands and telemetry with low latency and clear operational
+                boundaries between components.
+              </li>
+              <li>
+                Added monitoring, logging, and alerting around key flows such as
+                robot-status updates and human override actions, so on-call engineers
+                could quickly identify and fix issues.
+              </li>
+              <li>
+                Participated in on-call rotations, triaged incidents, and worked on
+                follow-up tasks to remove root causes instead of relying on manual
+                runbooks.
+              </li>
+              <li>
+                Collaborated with partner teams across robotics, ops, and product to
+                translate operational requirements into practical service-level
+                indicators (SLIs) and alerts.
+              </li>
+            </ul>
+          </div>
         </article>
 
         <!-- Graduate Assistant -->
         <article class="card">
           <div class="card__header">
-            <div>
-              <div class="card__title">Graduate Assistant · IT Tech Support Associate</div>
-              <div class="card__meta">
-                Northern Illinois University · DeKalb, USA · Aug 2021 – Jul 2022
+            <div class="card__header-main">
+              <div class="card__title">
+                Graduate Assistant · IT Tech Support Associate
+              </div>
+              <div class="card__meta card__meta--org">
+                Northern Illinois University · DeKalb, USA
               </div>
             </div>
+            <div class="card__meta card__meta--time">Aug 2021 – Jul 2022</div>
           </div>
+
+          <p class="card__summary">
+            Supported the university’s classroom and lab technology stack, helping
+            faculty and students rely on AV and computing infrastructure for everyday
+            teaching and learning.
+          </p>
 
           <div class="card__chip-row">
             <span class="chip">IT Support</span>
@@ -191,19 +312,27 @@
           <ul class="card__list">
             <li>
               Supported classroom technology for more than 500 students, ensuring
-              hardware, AV systems, and learning tools worked reliably during lectures.
+              projectors, microphones, lecture-capture systems, and instructor machines
+              were ready before classes started.
             </li>
             <li>
-              Tested and evaluated campus technologies, identified hardware/software
-              issues, and provided timely troubleshooting for faculty and staff.
+              Diagnosed hardware and software issues on Windows and macOS machines,
+              networking problems, and account-related access issues, often under
+              time pressure between back-to-back sessions.
             </li>
             <li>
-              Imaged and prepared computers and laptops, maintaining accurate asset and
-              support records for future audits and refresh cycles.
+              Imaged and prepared computers and laptops for labs and staff, including
+              OS installation, driver setup, required software, and security baselines,
+              while keeping accurate records for audits.
             </li>
             <li>
-              Helped students and staff get the most out of NIU’s technology stack by
-              explaining tools and recommended workflows in simple terms.
+              Worked closely with faculty to understand how they used classroom tech,
+              then suggested simpler workflows (shortcuts, presets, cable management)
+              that reduced friction during teaching.
+            </li>
+            <li>
+              Documented common issues and fixes, building lightweight internal guides
+              that helped other assistants respond faster to recurring problems.
             </li>
           </ul>
         </article>
@@ -225,13 +354,17 @@
                 <div>
                   <div class="edu-card__title">Master’s in Computer Science</div>
                   <div class="edu-card__meta">
-                    Northern Illinois University · Jan 2021 – Aug 2022
+                    Northern Illinois University
                   </div>
                 </div>
-                <span class="edu-card__badge">CGPA · 3.39 / 4.00</span>
+                <div class="edu-card__right">
+                  <span class="edu-card__time">Jan 2021 – Aug 2022</span>
+                  <span class="edu-card__badge">CGPA · 3.39 / 4.00</span>
+                </div>
               </div>
               <p class="edu-card__desc">
-                Focused on distributed systems, algorithms, and large-scale data processing.
+                Focused on distributed systems, algorithms, and large-scale data
+                processing, with projects involving search, heuristics, and applied AI.
               </p>
             </div>
           </article>
@@ -247,10 +380,13 @@
                     Bachelor’s in Computer Science and Engineering
                   </div>
                   <div class="edu-card__meta">
-                    Institute of Aeronautical Engineering · Aug 2016 – May 2020
+                    Institute of Aeronautical Engineering
                   </div>
                 </div>
-                <span class="edu-card__badge">CGPA · 6.62 / 10.00</span>
+                <div class="edu-card__right">
+                  <span class="edu-card__time">Aug 2016 – May 2020</span>
+                  <span class="edu-card__badge">CGPA · 6.62 / 10.00</span>
+                </div>
               </div>
             </div>
           </article>
@@ -262,7 +398,7 @@
         <div class="section__header">
           <h2 class="section__title">Skills</h2>
           <span class="section__subtitle">
-            A snapshot of the technologies I work with most.
+            Technologies and tools I use to design, build, and operate services.
           </span>
         </div>
 
@@ -270,7 +406,9 @@
           <article class="skill-block">
             <div class="skill-block__header">
               <h3>Programming Languages</h3>
-              <p class="skill-block__hint">Daily driver and core problem-solving stack.</p>
+              <p class="skill-block__hint">
+                Daily driver languages for backend, scripting, and analysis.
+              </p>
             </div>
             <div class="skill-grid">
               <span class="skill-pill">Java</span>
@@ -283,7 +421,9 @@
           <article class="skill-block">
             <div class="skill-block__header">
               <h3>Databases</h3>
-              <p class="skill-block__hint">Relational + NoSQL, tuned for reliability.</p>
+              <p class="skill-block__hint">
+                Relational and NoSQL stores used across different services.
+              </p>
             </div>
             <div class="skill-grid">
               <span class="skill-pill">SQL</span>
@@ -295,7 +435,9 @@
           <article class="skill-block">
             <div class="skill-block__header">
               <h3>Cloud &amp; Infrastructure (AWS)</h3>
-              <p class="skill-block__hint">Services I use to ship and operate systems.</p>
+              <p class="skill-block__hint">
+                Services I rely on for compute, orchestration, and observability.
+              </p>
             </div>
             <div class="skill-grid">
               <span class="skill-pill">Lambda</span>
@@ -318,7 +460,9 @@
           <article class="skill-block">
             <div class="skill-block__header">
               <h3>Tools &amp; Frameworks</h3>
-              <p class="skill-block__hint">Editor, IDE, and processing stack.</p>
+              <p class="skill-block__hint">
+                Editors, IDEs, and data processing tools I use regularly.
+              </p>
             </div>
             <div class="skill-grid">
               <span class="skill-pill">IntelliJ</span>
@@ -344,20 +488,29 @@
         <!-- Web Scraping & Sentiment Analysis -->
         <article class="card">
           <div class="card__header">
-            <div>
+            <div class="card__header-main">
               <div class="card__title">Web Scraping &amp; Sentiment Analysis</div>
-              <div class="card__meta">Python · R · May 2022 – Jul 2022</div>
+              <div class="card__meta card__meta--org">
+                Python · R
+              </div>
             </div>
+            <div class="card__meta card__meta--time">May 2022 – Jul 2022</div>
           </div>
 
           <ul class="card__list">
             <li>
-              Built scrapers to collect datasets from multiple websites, then cleaned
-              and merged the data for downstream analysis.
+              Built web scrapers to collect structured and unstructured datasets from
+              multiple sources, handling pagination, throttling, and basic error
+              recovery to avoid partial or corrupt data.
+            </li>
+            <li>
+              Cleaned, normalized, and merged collected data for downstream analysis,
+              including handling missing values and inconsistent formats across sites.
             </li>
             <li>
               Applied sentiment analysis to evaluate company performance signals from
-              unstructured text sources.
+              text data, experimenting with different thresholds and aggregation levels
+              to make results more interpretable.
             </li>
           </ul>
         </article>
@@ -365,20 +518,28 @@
         <!-- 2048 Game -->
         <article class="card">
           <div class="card__header">
-            <div>
+            <div class="card__header-main">
               <div class="card__title">2048 Game with AI Heuristics</div>
-              <div class="card__meta">Java · OOP · Aug 2019 – Dec 2019</div>
+              <div class="card__meta card__meta--org">
+                Java · Object-Oriented Design
+              </div>
             </div>
+            <div class="card__meta card__meta--time">Aug 2019 – Dec 2019</div>
           </div>
 
           <ul class="card__list">
             <li>
-              Implemented an AI-driven version of 2048 using improved heuristic functions
-              and search trees.
+              Implemented an AI-driven version of 2048 using improved heuristic
+              functions and search trees to evaluate board states and choose moves.
             </li>
             <li>
-              Achieved smoother and stronger playing strategies than baseline
-              implementations.
+              Designed the project with clear separation between game logic, search
+              heuristics, and UI, making it easier to test and tweak the AI strategy.
+            </li>
+            <li>
+              Compared the behavior of different heuristics (tile weighting, empty
+              cells, monotonicity) and tuned parameters based on observed win rates and
+              average scores.
             </li>
           </ul>
         </article>
@@ -386,22 +547,31 @@
         <!-- RFID Project -->
         <article class="card">
           <div class="card__header">
-            <div>
+            <div class="card__header-main">
               <div class="card__title">
                 RFID-based Real-Time Location in Medical Settings
               </div>
-              <div class="card__meta">IoT · Jan 2019 – Mar 2019</div>
+              <div class="card__meta card__meta--org">
+                IoT · Embedded Systems
+              </div>
             </div>
+            <div class="card__meta card__meta--time">Jan 2019 – Mar 2019</div>
           </div>
 
           <ul class="card__list">
             <li>
               Built an integrated system using RFID tags and DHT sensors to provide
-              real-time location of tagged cards within medical facilities.
+              real-time location and environmental information for tagged cards in
+              medical facilities.
             </li>
             <li>
-              Enabled better asset tracking and monitoring workflows for equipment and
-              critical items.
+              Designed the data flow from tag reads through the microcontroller to
+              storage and display, ensuring that updates were frequent enough to be
+              useful but not noisy.
+            </li>
+            <li>
+              Focused on practical workflows for staff—such as quickly finding tagged
+              equipment or supplies—rather than just lab-style metrics.
             </li>
           </ul>
         </article>
@@ -415,19 +585,23 @@
 
         <article class="card">
           <div class="card__header">
-            <div>
+            <div class="card__header-main">
               <div class="card__title">
                 An Efficient Approach to Implement 2048 Game Using Artificial Intelligence
               </div>
-              <div class="card__meta">Sep 2020</div>
+              <div class="card__meta card__meta--org">
+                With Tejaswini Mandava, Varsha Kakumanu, and P. L. Srinivasa Murthy
+              </div>
             </div>
+            <div class="card__meta card__meta--time">Sep 2020</div>
           </div>
 
           <p class="card__body">
-            Co-authored with Tejaswini Mandava, Varsha Kakumanu, and P. L. Srinivasa
-            Murthy. Proposed an enhanced 2048 implementation by improving heuristic
-            functions and applying search trees for more intelligent and responsive
-            gameplay.
+            Proposed an enhanced implementation of the 2048 game by improving heuristic
+            functions and applying search trees to drive move selection. The work
+            explored how different heuristics influenced game performance, and showed
+            that a carefully tuned combination of features could lead to more stable
+            and intelligent behavior compared to baseline implementations.
           </p>
         </article>
       </section>
@@ -437,8 +611,8 @@
         <div class="section__header">
           <h2 class="section__title">Contact</h2>
           <span class="section__subtitle">
-            Open to opportunities and conversations around backend, data, and
-            experimentation platforms.
+            Open to opportunities and conversations around backend systems,
+            experimentation platforms, and GenAI-powered customer experiences.
           </span>
         </div>
 
