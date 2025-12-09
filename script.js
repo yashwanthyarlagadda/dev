@@ -1,14 +1,13 @@
 // ===== Active nav link on scroll =====
 const navLinks = document.querySelectorAll(".site-nav__link");
 
-// Collect sections from nav hrefs
 const sections = Array.from(navLinks)
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
 function setActiveLink() {
   let currentId = null;
-  const scrollY = window.scrollY + 130; // nav offset
+  const scrollY = window.scrollY + 130; // offset for sticky nav
 
   for (const section of sections) {
     if (section.offsetTop <= scrollY) {
@@ -49,43 +48,6 @@ if ("IntersectionObserver" in window) {
 } else {
   // Fallback: show all
   revealEls.forEach((el) => el.classList.add("reveal--visible"));
-}
-
-// ===== Dark mode toggle =====
-const root = document.documentElement;
-const themeToggle = document.getElementById("theme-toggle");
-
-function getPreferredTheme() {
-  const stored = localStorage.getItem("yy-theme");
-  if (stored === "light" || stored === "dark") return stored;
-
-  if (window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    return "dark";
-  }
-  return "light";
-}
-
-function applyTheme(theme) {
-  if (theme === "dark") {
-    root.setAttribute("data-theme", "dark");
-    if (themeToggle) themeToggle.textContent = "☀️";
-  } else {
-    root.setAttribute("data-theme", "light");
-    if (themeToggle) themeToggle.textContent = "🌙";
-  }
-}
-
-const initialTheme = getPreferredTheme();
-applyTheme(initialTheme);
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    const current = root.getAttribute("data-theme") || initialTheme;
-    const next = current === "dark" ? "light" : "dark";
-    localStorage.setItem("yy-theme", next);
-    applyTheme(next);
-  });
 }
 
 // ===== Footer year =====
