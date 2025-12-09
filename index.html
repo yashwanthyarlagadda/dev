@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 
-  <meta name="description"
-        content="Portfolio of Yashwanth Yarlagadda, Software Development Engineer in Seattle. Backend, experimentation platforms, AWS, Java, TypeScript." />
+  <meta
+    name="description"
+    content="Portfolio of Yashwanth Yarlagadda, Software Development Engineer in Seattle, focused on backend systems, experimentation platforms, and AWS."
+  />
 </head>
 
 <body>
   <div class="page">
-
     <!-- Top Navigation -->
     <header class="site-nav">
       <div class="site-nav__inner">
@@ -35,58 +36,69 @@
           <a href="#publications" class="site-nav__link">Publications</a>
           <a href="#contact" class="site-nav__link">Contact</a>
         </nav>
-
-        <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
-          🌙
-        </button>
       </div>
     </header>
 
-    <!-- Hero / About -->
     <main id="top">
+      <!-- Hero / About -->
       <section class="hero" id="about">
-        <div class="hero__eyebrow">
-          <span>Software Development Engineer · Seattle, WA</span>
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            Software Development Engineer · Seattle, WA
+          </div>
+
+          <h1 class="hero__title">Hi, I’m Yashwanth.</h1>
+
+          <p class="hero__subtitle">
+            I design and build reliable, data-driven backend services and experimentation
+            platforms. I currently work at Amazon, using
+            <strong>Java</strong>, <strong>TypeScript</strong>, and <strong>AWS</strong>
+            to ship scalable catalog and robotics solutions with strong observability and
+            operational excellence.
+          </p>
+
+          <div class="hero__meta">
+            <span>📍 Seattle, Washington</span>
+            <span>•</span>
+            <span>✉️ <a href="mailto:kethan403@gmail.com">kethan403@gmail.com</a></span>
+            <span>•</span>
+            <span>📱 <a href="tel:+14699964010">+1 (469) 996-4010</a></span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">
+              <span>View experience</span>
+              <span class="btn__icon">↗</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <span>Contact</span>
+            </a>
+            <a href="resume.pdf" class="btn btn--outline" target="_blank" rel="noreferrer">
+              <span>Download resume</span>
+            </a>
+          </div>
+
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/yyashwanth" target="_blank" rel="noreferrer">
+              <span class="social-chip">
+                <span>🔗</span> LinkedIn
+              </span>
+            </a>
+            <a href="https://github.com/yashwanthyarlagadda" target="_blank" rel="noreferrer">
+              <span class="social-chip">
+                <span>🐙</span> GitHub
+              </span>
+            </a>
+          </div>
         </div>
 
-        <h1 class="hero__title">Hi, I’m Yashwanth.</h1>
-
-        <p class="hero__subtitle">
-          I build reliable, data-driven backend services and experimentation platforms.
-          I currently work at Amazon, using <strong>Java</strong>, <strong>TypeScript</strong>, and
-          <strong>AWS</strong> to ship scalable catalog and robotics solutions with strong
-          observability and operational excellence.
-        </p>
-
-        <div class="hero__meta">
-          <span>📍 Seattle, Washington</span>
-          <span>·</span>
-          <span>✉️ <a href="mailto:kethan403@gmail.com">kethan403@gmail.com</a></span>
-          <span>·</span>
-          <span>📱 <a href="tel:+14699964010">+1 (469) 996-4010</a></span>
-        </div>
-
-        <div class="hero__actions">
-          <a href="#experience" class="btn btn--primary">
-            <span>View experience</span>
-            <span class="btn__icon">↗</span>
-          </a>
-          <a href="#contact" class="btn btn--ghost">
-            <span>Contact</span>
-          </a>
-        </div>
-
-        <div class="hero__social">
-          <a href="https://www.linkedin.com/in/yyashwanth" target="_blank" rel="noreferrer">
-            <span class="social-chip">
-              <span>🔗</span> LinkedIn
-            </span>
-          </a>
-          <a href="https://github.com/yashwanthyarlagadda" target="_blank" rel="noreferrer">
-            <span class="social-chip">
-              <span>🐙</span> GitHub
-            </span>
-          </a>
+        <div class="hero__photo-wrap">
+          <!-- Make sure this filename matches your actual JPG in the repo -->
+          <img
+            src="profile.jpg"
+            alt="Portrait of Yashwanth Yarlagadda"
+            class="hero__photo"
+          />
         </div>
       </section>
 
@@ -94,10 +106,10 @@
       <section id="experience" class="section reveal">
         <div class="section__header">
           <h2 class="section__title">Experience</h2>
-          <span class="section__pill">5+ years building scalable systems</span>
+          <span class="section__pill">5+ years of building real-world systems</span>
         </div>
         <p class="section__subtitle">
-          Roles where I’ve designed, shipped, and operated backend systems in production.
+          Roles where I’ve owned, shipped, and operated backend systems in production.
         </p>
 
         <!-- Amazon -->
@@ -105,12 +117,10 @@
           <div class="card__header">
             <div>
               <div class="card__title">Software Development Engineer</div>
-              <div class="card__meta">
-                Amazon · Seattle, USA · Aug 2022 – Present
-              </div>
+              <div class="card__meta">Amazon · Seattle, USA · Aug 2022 – Present</div>
             </div>
             <div class="card__meta card__meta--sub">
-              <span>Amazon Scout · Teleops & Delivery Experience</span>
+              Amazon Scout · Teleops &amp; Catalog Experimentation
             </div>
           </div>
 
@@ -129,30 +139,29 @@
               visibility and control for operations teams.
             </li>
             <li>
-              Designed and shipped catalog experimentation platform features so teams can
-              roll out catalog changes through controlled experiments instead of one-off launches.
+              Implemented catalog experimentation features that let teams launch changes
+              through controlled experiments instead of one-off releases.
             </li>
             <li>
-              Expanded experiment coverage across more catalog attributes and automated
-              experiment lifecycle with <strong>Weblab APIs</strong>, reducing manual setup
-              and operational overhead for partner teams.
+              Expanded experimentation coverage to additional catalog attributes and
+              automated experiment lifecycle management using <strong>Weblab APIs</strong>.
             </li>
             <li>
-              Built an A/B testing reporting pipeline with
-              <strong>Amazon Managed Workflows for Apache Airflow</strong>, <strong>EMR</strong>,
-              <strong>SQS</strong>, <strong>SNS</strong>, and <strong>S3</strong> to compute
-              metrics like OPS, units, and glance views for experiments.
+              Created an A/B testing reporting pipeline with
+              <strong>Apache Airflow</strong>, <strong>EMR</strong>, <strong>SQS</strong>,
+              <strong>SNS</strong>, and <strong>S3</strong> to compute metrics such as OPS,
+              units sold, and glance views.
             </li>
             <li>
               Integrated experimentation and reporting workflows with
               <strong>AWS Lambda</strong>, <strong>API Gateway</strong>,
               <strong>DynamoDB</strong>, <strong>RDS</strong>, and
-              <strong>CloudWatch</strong> to improve reliability, observability, and on-call health.
+              <strong>CloudWatch</strong> for reliability and observability.
             </li>
             <li>
-              Hardened the platform using <strong>AWS AppConfig</strong>,
-              <strong>CloudFormation</strong>, <strong>ECS Fargate</strong>, and
-              <strong>IAM</strong>, improving deployment safety, configuration hygiene, and scalability.
+              Used <strong>AWS AppConfig</strong>, <strong>CloudFormation</strong>,
+              <strong>ECS Fargate</strong>, and <strong>IAM</strong> to make deployments
+              safer and the platform more scalable and secure.
             </li>
           </ul>
         </article>
@@ -171,25 +180,25 @@
           <div class="card__chip-row">
             <span class="chip">IT Support</span>
             <span class="chip">Classroom Tech</span>
-            <span class="chip">Hardware & Software</span>
+            <span class="chip">Customer Service</span>
           </div>
 
           <ul class="card__list">
             <li>
-              Supported classroom technology for 500+ students, ensuring lecture hardware,
-              AV systems, and learning tools worked reliably during instruction.
+              Supported classroom technology for more than 500 students, ensuring
+              hardware, AV systems, and learning tools worked reliably during lectures.
             </li>
             <li>
-              Tested and evaluated campus technologies, identified hardware/software issues,
-              and delivered timely troubleshooting to faculty and staff.
+              Tested and evaluated campus technologies, identified hardware/software
+              issues, and provided timely troubleshooting for faculty and staff.
             </li>
             <li>
-              Imaged and prepared computers and laptops while maintaining accurate asset
-              and support records for future audits and refreshes.
+              Imaged and prepared computers and laptops, maintaining accurate asset and
+              support records for future audits and refresh cycles.
             </li>
             <li>
-              Educated students and staff on available NIU technologies and helped them use
-              the right tools for their coursework and research.
+              Helped students and staff get the most out of NIU’s technology stack by
+              explaining tools and recommended workflows in simple terms.
             </li>
           </ul>
         </article>
@@ -261,17 +270,17 @@
           </div>
 
           <div>
-            <h3>Cloud & Infrastructure (AWS)</h3>
+            <h3>Cloud &amp; Infrastructure (AWS)</h3>
             <div class="skill-grid">
               <span class="skill-pill">Lambda</span>
               <span class="skill-pill">Step Functions</span>
               <span class="skill-pill">API Gateway</span>
               <span class="skill-pill">IAM</span>
-              <span class="skill-pill">DynamoDB</span>
-              <span class="skill-pill">RDS</span>
               <span class="skill-pill">S3</span>
               <span class="skill-pill">SNS</span>
               <span class="skill-pill">SQS</span>
+              <span class="skill-pill">DynamoDB</span>
+              <span class="skill-pill">RDS</span>
               <span class="skill-pill">AppConfig</span>
               <span class="skill-pill">CloudFormation</span>
               <span class="skill-pill">CloudWatch</span>
@@ -281,7 +290,7 @@
           </div>
 
           <div>
-            <h3>Tools & Frameworks</h3>
+            <h3>Tools &amp; Frameworks</h3>
             <div class="skill-grid">
               <span class="skill-pill">IntelliJ</span>
               <span class="skill-pill">Visual Studio</span>
@@ -314,12 +323,12 @@
 
           <ul class="card__list">
             <li>
-              Built scrapers to collect datasets from multiple websites, then cleaned and
-              merged data for downstream analysis.
+              Built scrapers to collect datasets from multiple websites, then cleaned
+              and merged the data for downstream analysis.
             </li>
             <li>
-              Applied sentiment analysis to evaluate company performance signals and
-              trends from unstructured text.
+              Applied sentiment analysis to evaluate company performance signals from
+              unstructured text sources.
             </li>
           </ul>
         </article>
@@ -339,7 +348,7 @@
               and search trees.
             </li>
             <li>
-              Achieved smoother and stronger playing strategies compared with baseline
+              Achieved smoother and stronger playing strategies than baseline
               implementations.
             </li>
           </ul>
@@ -349,18 +358,21 @@
         <article class="card">
           <div class="card__header">
             <div>
-              <div class="card__title">RFID-based Real-Time Location in Medical Settings</div>
+              <div class="card__title">
+                RFID-based Real-Time Location in Medical Settings
+              </div>
               <div class="card__meta">IoT · Jan 2019 – Mar 2019</div>
             </div>
           </div>
 
           <ul class="card__list">
             <li>
-              Developed an integrated system using RFID tags and DHT sensors to provide
-              real-time location of tagged cards.
+              Built an integrated system using RFID tags and DHT sensors to provide
+              real-time location of tagged cards within medical facilities.
             </li>
             <li>
-              Enabled better asset tracking and monitoring workflows in medical environments.
+              Enabled better asset tracking and monitoring workflows for equipment and
+              critical items.
             </li>
           </ul>
         </article>
@@ -383,9 +395,10 @@
           </div>
 
           <p class="card__body">
-            Co-authored with Tejaswini Mandava, Varsha Kakumanu, and P. L. Srinivasa Murthy.
-            Proposed an enhanced 2048 implementation by improving heuristic functions and applying
-            search trees for more intelligent and responsive gameplay.
+            Co-authored with Tejaswini Mandava, Varsha Kakumanu, and P. L. Srinivasa
+            Murthy. Proposed an enhanced 2048 implementation by improving heuristic
+            functions and applying search trees for more intelligent and responsive
+            gameplay.
           </p>
         </article>
       </section>
@@ -395,7 +408,8 @@
         <div class="section__header">
           <h2 class="section__title">Contact</h2>
           <span class="section__subtitle">
-            Open to roles and conversations around backend, data, and experimentation platforms.
+            Open to opportunities and conversations around backend, data, and
+            experimentation platforms.
           </span>
         </div>
 
@@ -410,13 +424,21 @@
           </div>
           <div class="contact-item">
             <span class="contact-item__label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/yyashwanth" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/yyashwanth"
+              target="_blank"
+              rel="noreferrer"
+            >
               linkedin.com/in/yyashwanth
             </a>
           </div>
           <div class="contact-item">
             <span class="contact-item__label">GitHub</span>
-            <a href="https://github.com/yashwanthyarlagadda" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/yashwanthyarlagadda"
+              target="_blank"
+              rel="noreferrer"
+            >
               github.com/yashwanthyarlagadda
             </a>
           </div>
